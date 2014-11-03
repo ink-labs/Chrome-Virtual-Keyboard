@@ -556,7 +556,9 @@ function vk_evt_input_blur() {
 	virtualKeyboardChromeExtension_generate_onchange();
 	virtualKeyboardChromeExtensionClickedElem.type = virtualKeyboardChromeExtensionClickedElem.getAttribute("_originalType");
 	virtualKeyboardChromeExtensionClickedElem = undefined;
-	virtualKeyboardChromeExtensionCloseTimer = setTimeout();
+	virtualKeyboardChromeExtensionCloseTimer = setTimeout(function() {
+		virtualKeyboardChromeExtension_click('Close');
+	}, 1000);
 }
 
 
