@@ -482,3 +482,222 @@
 	padding: 7px;
 	font-size: 20px;
 }
+
+
+
+					/*added css*/
+
+					@font-face {
+					    font-family: gotham-book;
+					    src: url(/fonts/gothamhtf-book-webfont.ttf);
+					}
+
+					.keyboard-wrap {
+						width: 100%;
+					}
+					#virtualKeyboardChromeExtension {
+						width: 800px;
+						margin-left: auto;
+						margin-right: auto;
+						left: none;
+						right: none;
+						padding: 0 !important;
+
+						background-color: transparent !important;
+						background: none !important;
+					}
+
+
+					/*key colors*/
+
+					#virtualKeyboardChromeExtension td.kbdHB span, #virtualKeyboardChromeExtension td.kbdHBS span {
+						background-color: #CCCCCC !important;
+					}
+
+					#virtualKeyboardChromeExtension td.kbdH span {
+						background-color: #E6E6E6 !important;
+					}
+					#virtualKeyboardChromeExtension td.kbdD span, #virtualKeyboardChromeExtension td.kbdShift span {
+						background-color: #CCCCCC !important;
+					}
+					#virtualKeyboardChromeExtension td.kbdS span {
+						background-color: #E6E6E6 !important;
+					}
+
+					#virtualKeyboardChromeExtension td.kbdHBE span {
+					 	background-color: #419ffe !important;
+					 	color: #fff !important;
+					 	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.15) !important;
+					}
+					#virtualKeyboardChromeExtension td.kbdHBE:active span {
+						background-color: #0068D2 !important;
+						color: #FFF !important;
+						text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.15) !important;
+					}
+
+					#virtualKeyboardChromeExtensionMainKbd.Shift td.kbdShift span {
+						background-color: #4D4D4D !important;
+						color: #fff !important;
+						text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.15) !important;
+					}
+
+
+					/*key shine and letter position*/
+					#virtualKeyboardChromeExtension table td.kdbCase span, #virtualKeyboardChromeExtension table td.kbdHB span, #virtualKeyboardChromeExtension td.kbdHBS span, #virtualKeyboardChromeExtension table td.kbdHBE span, #virtualKeyboardChromeExtension table td.kbdH span 
+					, #virtualKeyboardChromeExtension table td.kbdS span, #virtualKeyboardChromeExtension table td.kbdD span , #virtualKeyboardChromeExtension table td.kbdShift span {
+						-webkit-box-shadow: inset 0px 1px 0px rgba(255,255,255,1);
+						padding-top: 20px;
+					}
+
+					#virtualKeyboardChromeExtension td.kbdD:active span, #virtualKeyboardChromeExtension td[highlight=true] span, #virtualKeyboardChromeExtension td.kbdH:active span, #virtualKeyboardChromeExtension td.kbdHB:active span, #virtualKeyboardChromeExtension td.kbdS:active span, #virtualKeyboardChromeExtension td.kbdD.active span, #virtualKeyboardChromeExtension td.kbdH.active span, #virtualKeyboardChromeExtension td.kbdHB.active span, #virtualKeyboardChromeExtension td.kbdS.active span {
+						background-color: #4D4D4D !important;
+						color: #FFF !important;
+						text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.15) !important;
+					}
+					#virtualKeyboardChromeExtension td.kbdShift:active span, #virtualKeyboardChromeExtension td.kbdShift.active span {
+						background-color: #4D4D4D !important;
+						color: #FFF !important;
+						text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.15) !important;
+					}
+
+					/*hide numbers row*/
+					#virtualKeyboardChromeExtensionNumberBarKbd1 {
+						display: none;
+					}
+
+					#virtualKeyboardChromeExtension table {
+						margin: 0 !important;
+						width: inherit !important;
+						border-spacing: 0px;
+					}
+					#virtualKeyboardChromeExtension table tr {
+						display: flex;
+					}
+
+					/*general keys*/
+					#virtualKeyboardChromeExtension table td {
+						display: inline-block;
+						width: 63px !important;
+						margin: 5px !important;
+						padding-left: 0px !important;
+						padding-right: 0px !important;
+					}
+
+					#virtualKeyboardChromeExtension td.kdbCase {
+						padding: 0 !important;
+					}
+
+					#virtualKeyboardChromeExtension table td.kdbCase span, #virtualKeyboardChromeExtension table td.kbdHB span, #virtualKeyboardChromeExtension td.kbdHBS span, #virtualKeyboardChromeExtension table td.kbdHBE span, #virtualKeyboardChromeExtension table td.kbdH span 
+					, #virtualKeyboardChromeExtension table td.kbdS span, #virtualKeyboardChromeExtension table td.kbdD span , #virtualKeyboardChromeExtension table td.kbdShift span {
+						-webkit-box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4), inset 0px -1px 1px rgba(0,0,0,0.1);
+					    padding-top:21px !important;
+					}
+
+					#virtualKeyboardChromeExtension table td span {
+						font-family: gotham-book !important;
+						color: #4D4D4D !important;
+						font-size: 20px !important;
+						font-weight: 600;
+						-webkit-transition-duration: 0.1s;
+						text-shadow: 0 0 2px rgba(255, 255, 255, 0.35) !important;
+						border-radius: 6px !important;
+						position: absolute;
+						left: 0 !important;
+						right: 0 !important;
+						padding-top: 31px !important;
+						line-height: 17px !important;
+						width: 100%;
+					}
+
+					#virtualKeyboardChromeExtensionMainNumbers td span{
+						top: 0px !important;
+						bottom: 0px !important;
+					}
+
+					#virtualKeyboardChromeExtension table td span.kAbc {
+						font-size: 20px !important;
+					}
+
+					/*backspace*/
+					#virtualKeyboardChromeExtension td.kbdHB {
+						width: 63px !important;
+					}
+					/*letter a*/
+					#virtualKeyboardChromeExtension td.kbdKA {
+						width: 90px !important;
+					}
+					/*enter*/
+					#virtualKeyboardChromeExtension td.kbdHBE {
+						width: 109px !important;
+					}
+					/*left shift*/
+					#virtualKeyboardChromeExtension td.kbdShiftL {
+						width: 63px !important;
+					}
+					/*right shift*/
+					#virtualKeyboardChromeExtension td.kbdShiftR {
+						width: 63px !important;
+					}
+					/*spacebar*/
+					#virtualKeyboardChromeExtension td.kbdS {
+						width: 429px !important;
+					}
+					/*123 left*/
+					#virtualKeyboardChromeExtension td.kbdDL {
+						width: 172px !important;
+					}
+					/*123 right*/
+					#virtualKeyboardChromeExtension td.kbdDR {
+						width: 172px !important;
+					}
+
+					/*SYMBOLS*/
+					/*shift*/
+					#virtualKeyboardChromeExtension table td span.kShift {
+						background-image: none !important;
+					}
+
+					/*enter*/
+					#virtualKeyboardChromeExtension table td span.kEnter {
+						background-image: none !important;
+						font-size: 20px !important;
+						color: #fff !important;
+					}
+					#virtualKeyboardChromeExtension [_key=Enter] span {
+						background-image: none !important;
+						font-size: 20px !important;
+					}
+					#virtualKeyboardChromeExtension .kbdHB span {
+						background-image: url(/icons/backspace.svg) !important;
+					}
+					#virtualKeyboardChromeExtension td.kbdHB:active span {
+						background-image: url(/icons/backspace-active.svg) !important;
+					}
+					#virtualKeyboardChromeExtension [_key=Backspace] span {
+						font-size: 0px !important;
+					}
+					#virtualKeyboardChromeExtension.modeS [_key=Backspace].kbdClick span {
+						background-image: url(/icons/backspace.svg) !important;
+					}
+
+
+
+
+@media only screen and (max-width:1200px){
+	#virtualKeyboardChromeExtension [_key=Backspace].kbdClick span {
+		background-image: url(/icons/backspace.svg) !important;
+		font-size: 0px !important;
+		color: transparent !important;
+		text-shadow: none !important;
+	}
+}
+@media only screen and (max-width:1200px){
+	#virtualKeyboardChromeExtension [_key=Enter].kbdClick span {
+		background-image: none !important;
+		font-size: 20px !important;
+		color: #fff !important;
+		text-shadow: none !important;
+	}
+}
+
+

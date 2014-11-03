@@ -38,7 +38,10 @@
     "buttons/*",
     "buttons/keyboard_1.png",
     "buttons/keyboard_2.png",
-    "buttons/keyboard_3.png"
+    "buttons/keyboard_3.png",
+  "icons/backspace.svg",
+  "icons/backspace-active.svg",
+  "fonts/gothamhtf-book-webfont.ttf"
   ],
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
   "content_scripts": [
