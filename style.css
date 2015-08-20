@@ -701,7 +701,8 @@
 }
 
 
-#virtualKeyboardChromeExtensionMainKbd {
+#virtualKeyboardChromeExtensionMainKbd,
+#virtualKeyboardChromeExtensionMainNumbers {
 	-webkit-transform: scale(1.25) translate3d(0, -90px, 0);
 }
 
